@@ -1,0 +1,148 @@
+/*inter 700 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap');
+/*mulish 400*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+/*mulish 700*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
+/*open sans 400*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/*dm sans 500*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
+
+:root {
+    --verde-letras: #89C5CC;
+    --verde-detalhes: #69B99D;
+    --branco-principal: #F9F9F9;
+    --cinza-letras: #7D7987;
+    --azul-letras: #1F1534;
+    --preto-letras: #000000;
+
+    --fonte-inter: 'Inter', sans-serif;
+    --fonte-mulish-400: 'Mulish', sans-serif;
+    --peso-mulish-400: 400;
+    --fonte-mulish-700: 'Mulish', sans-serif;
+    --peso-mulish-700: 700;
+    --fonte-open-sans: 'Open Sans', sans-serif;
+    --fonte-dm-sans: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-open-sans);
+    color: var(--preto-letras);
+    background-color: var(--branco-principal);
+}
+
+.cabecalho {
+    padding: 65px 153px 109px 122px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 22px ;
+    /*text-shadow: 1px 1px 2px black;*/
+}
+
+.logo-link {
+    text-decoration: none;
+    color: var(--verde-letras); 
+    font-family: var(--fonte-inter);
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 3rem;
+    font-size: 18px;
+}
+
+.home-link {
+    color: var(--azul-letras);
+    font-family: var(--fonte-mulish-700);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cabecalho__link {
+    color: var(--cinza-letras);
+    font-family: var(--fonte-mulish-400);
+    font-weight: 400;
+}
+
+.apresentacao {
+    display: flex;
+    gap: 32px;
+    padding-left: 119px;
+    padding-right: 159px;
+    align-items: flex-start;
+    font-family: var(--fonte-mulish-400);
+}
+
+.titulo {
+    font-family: var(--fonte-mulish-400); /* Fonte Mulish */
+    font-size: 49px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    line-height: 56px; /* Altura da linha */
+    text-align: left; /* Alinhamento à esquerda */
+    color: var(--preto-letras); /* Cor do texto */
+}
+
+.titulo-destaque {
+    color: var(--verde-letras);
+    font-family: var(--fonte-mulish-700);
+}
+
+.apresentacao__paragrafo__texto {
+    font-family: var(--fonte-open-sans);
+    color: var(--cinza-letras);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.principal__link {
+    font-family: var(--fonte-dm-sans);
+    margin-top: 20px;
+}
+
+.imagem-link {
+    height: 56px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; /* Alinha o texto verticalmente */
+    gap: 0.625rem;
+    padding: 10px 32px; 
+    font-size: 16px;
+    font-family: var(--fonte-dm-sans); 
+    font-weight: 500; 
+    line-height: 16px; 
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--branco-principal); 
+    background-color: #69B99D;
+    text-align: center;
+}
+
+.imagem-link img {
+    width: 24px; /* Altere para o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.rodape {
+    text-align: center;
+    font-family: var(--fonte-dm-sans);
+    font-weight: 400;
+    color: var(--preto-letras);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-top: auto;
+    padding-top: 133px;
+}
+
+.rodape__texto a{
+    text-decoration: none;
+    color: var(--preto-letras);
+}
