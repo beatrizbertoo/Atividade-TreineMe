@@ -34,28 +34,34 @@
 body {
     font-family: var(--fonte-open-sans);
     color: var(--preto-letras);
-    background-color: var(--branco-principal);
+    background-color: white;
 }
 
 .cabecalho {
     padding: 65px 153px 109px 122px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Espaça os itens do cabeçalho */
     align-items: center; 
     font-size: 22px ;
-    /*text-shadow: 1px 1px 2px black;*/
 }
 
 .logo-link {
     text-decoration: none;
     color: var(--verde-letras); 
     font-family: var(--fonte-inter);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);  /* Sombra do texto */
 }
 
 .cabecalho__menu {
     display: flex;
-    gap: 3rem;
+    gap: 48px; /* Espaçamento entre itens do menu */
     font-size: 18px;
+    color: var(--cinza-letras);
+    font-family: var(--fonte-mulish-400);
+    font-weight: 400;
+    text-decoration: none;
+    backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque ao fundo */
+
 }
 
 .home-link {
@@ -65,33 +71,30 @@ body {
     text-decoration: none;
 }
 
-.cabecalho__link {
-    color: var(--cinza-letras);
-    font-family: var(--fonte-mulish-400);
-    font-weight: 400;
-}
-
 .apresentacao {
     display: flex;
     gap: 32px;
     padding-left: 119px;
-    padding-right: 159px;
-    align-items: flex-start;
+    padding-right: 159px; 
+    margin-bottom: 133px;
+    align-items: flex-start; /* Alinha itens ao início */
     font-family: var(--fonte-mulish-400);
 }
 
 .titulo {
-    font-family: var(--fonte-mulish-400); /* Fonte Mulish */
-    font-size: 49px; /* Tamanho da fonte */
-    font-weight: 400; /* Peso da fonte */
+    font-family: var(--fonte-mulish-400); 
+    font-size: 49px; 
+    font-weight: 400; 
     line-height: 56px; /* Altura da linha */
-    text-align: left; /* Alinhamento à esquerda */
-    color: var(--preto-letras); /* Cor do texto */
+    text-align: left;
+    color: var(--preto-letras); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .titulo-destaque {
     color: var(--verde-letras);
     font-family: var(--fonte-mulish-700);
+    font-size: 700;
 }
 
 .apresentacao__paragrafo__texto {
@@ -99,35 +102,51 @@ body {
     color: var(--cinza-letras);
     font-weight: 400;
     font-size: 14px;
+    margin-top: 40px;
     line-height: 28px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.paragrafo-destaque {
+    font-family: var(--fonte-open-sans);
+    font-family: var(--fonte-open-sans);
 }
 
 .principal__link {
     font-family: var(--fonte-dm-sans);
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .imagem-link {
-    height: 56px;
     display: inline-flex;
     justify-content: center;
-    align-items: center; /* Alinha o texto verticalmente */
-    gap: 0.625rem;
-    padding: 10px 32px; 
+    align-items: center;
+    gap: 10px;
+    padding: 14px, 32px, 15px, 32px;
+    height: 56px;
+    width: 179px;
+    top: 473px;
+    left: 119px;
+    border-radius: 4px; /* Bordas arredondadas do link */
     font-size: 16px;
     font-family: var(--fonte-dm-sans); 
     font-weight: 500; 
-    line-height: 16px; 
-    border-radius: 4px;
-    text-decoration: none;
-    color: var(--branco-principal); 
-    background-color: #69B99D;
-    text-align: center;
+    color: var(--branco-principal); /* Cor do texto */
+    background-color: var(--verde-detalhes); /* Cor do fundo do botão */
+    text-decoration: none; /* Remove o sublinhado do link */ 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .imagem-link img {
     width: 24px; /* Altere para o tamanho desejado */
     height: auto; /* Mantém a proporção da imagem */
+}
+
+.apresentacao__imagem {
+    width: 481px;
+    height: 332px;
+    top: 197px;
+    left: 640px;
 }
 
 .rodape {
@@ -138,8 +157,8 @@ body {
     font-size: 16px;
     letter-spacing: 0;
     line-height: 28px;
-    margin-top: auto;
-    padding-top: 133px;
+    margin-top: 0px;
+    padding-top: 0;
 }
 
 .rodape__texto a{
